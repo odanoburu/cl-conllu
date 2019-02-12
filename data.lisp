@@ -42,6 +42,20 @@
 	    :accessor mtoken-end)
    (form    :initarg :form
 	    :accessor mtoken-form)
+   (lemma   :initarg :lemma
+            :accessor mtoken-lemma)
+   (upostag :initarg :upostag
+	    :initform "_"
+	    :accessor token-upostag)
+   (xpostag :initarg :xpostag
+	    :initform "_"
+	    :accessor token-xpostag)
+   (feats   :initarg :feats
+	    :initform "_"
+	    :accessor token-feats)
+   (deps    :initarg :deps
+	    :initform "_"
+	    :accessor token-deps)
    (misc    :initarg :misc
 	    :initform "_"
 	    :accessor mtoken-misc)))
